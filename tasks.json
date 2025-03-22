@@ -7,8 +7,8 @@
         "command": "g++",
         "args": [
           "-g",
-          "-I", "./SFML/include",
-          "-L", "./SFML/lib",
+          "-I", "${workspaceFolder}/SFML/include",
+          "-L", "${workspaceFolder}/SFML/lib",
           "main.cpp",
           "-o", "PhysicsEngine",
           "-lsfml-graphics",
