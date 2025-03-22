@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "build",
+        "type": "shell",
+        "command": "g++",
+        "args": [
+          "-g",
+          "-I", "./SFML/include",
+          "-L", "./SFML/lib",
+          "main.cpp",
+          "-o", "PhysicsEngine",
+          "-lsfml-graphics",
+          "-lsfml-window",
+          "-lsfml-system"
+        ],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
